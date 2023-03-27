@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDos with GraphQL</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="main.js" defer></script>
+</head>
+<body class="container">
+  <h1 class="display-1 mb-5">
+    GraphQL ToDos
+  </h1>
+  <div class="row mb-5">
+    <div class="col-md-6">
+      <h3>Add task</h3>
+      <form name="addTask">
+        <div class="input-group">
+          <input type="text" name="taskName" class="form-control">
+          <input type="submit" value="Add" class="btn btn-primary">
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <h3>Search task</h3>
+      <form name="findTask">
+        <div class="input-group">
+          <input type="text" name="searchName" class="form-control">
+          <input type="submit" value="Search" class="btn btn-primary">
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <hr class="my-2">
+
+  <ul id="todos" class="list-group"></ul>
+</body>
+</html>
